@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*.grid {
+    background-color: burlywood;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 80px 1fr 1fr 50px;
+    grid-template-areas:
+    "profile_pic"
+    "name_address"
+    "main"
+    "footer";
+}*/
+
+
+.header {
+    grid-area: header;
+    min-height: 50px;
+    margin-top: 20px;
+    margin-bottom: 45px;
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.header a {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: black;
+    font-size: 32px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px;
+    white-space: nowrap;
+    display: inline-block;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-bottom-style: groove;
+    border-bottom-width: 100%;
+}
+
+a {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+a:hover{
+    box-shadow:  0 0 5px 3px grey;
+}
+
+.profile_pic {
+    margin-top: auto;
+    margin-bottom: auto;
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    grid-area: profile_pic;
+}
+
+#picture {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#picture:hover {
+    box-shadow: 0 0 5px 3px grey;
+}
+
+.name_address {
+    margin-left: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+    grid-area: name_address;
+}
+
+#name {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+#address {
+    margin-top: 10px;
+    font-family: sans-serif;
+}
+
+.main {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    grid-area: main;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100 1fr 1fr;
+    grid-template-areas:
+    "about_me"
+    "skills"
+    "tools";
+}
+
+section {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#about_me {
+    grid-area: about_me;
+    margin-bottom: 50px;
+}
+
+#p_aboutme {
+    white-space: normal;
+}
+
+#skills{
+    grid-area: skills;
+    margin-bottom: 50px;
+
+}
+
+table {
+    border: black;
+    border-style: groove;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.table {
+    margin-left: 10px;
+}
+
+th {
+    border: hidden;
+}
+
+#tools {
+    grid-area: tools;
+    display: grid;
+     grid-template-columns: 1fr;
+    grid-template-rows: 50px 100 1fr;
+    grid-template-areas:
+    "tools_header tools_header"
+    "logos logos"
+    "videos videos";
+    margin-bottom: 50px;
+}
+
+#tools_header{
+    grid-area: tools_header;
+}
+
+#logos{
+    grid-area: logos;
+    margin-bottom: 20px;
+}
+
+#videos{
+    grid-area: videos;
+}
+
+i {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.footer {
+    border-top: lightslategray;
+    border-top-style: groove;
+    border-top-width: 100%;
+    grid-area: footer;
+    height: 100px;
+}
+
+.footer #copyright {
+    text-align: right;
+}
+
+.footer #impressum {
+    margin: 20px;
+    margin-left: unset;
+}
+
+#picture {
+    font-family: sans-serif;
+}
+
+h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+}
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+}
+
+p {
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+
+@media screen and (min-width: 736px)
+{
+    .grid {
+        height: auto;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 1fr 280px 600px 1fr;
+        grid-template-rows: 100px 280px 1fr 50px ;
+        grid-template-areas:
+        ". header header ."
+        ". profile_pic name_address ."
+        ". main main ."
+        ". footer footer .";
+    }
+}
